@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 150); 
     }
 
-    function iniciarAnimacionEscritura() {
+    function iniciarAnimacionTexto() {
         typingTexts.forEach((elemento, indice) => {
             setTimeout(() => {
                 escribirTexto(elemento);
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!this.classList.contains('open')) {
             this.classList.add('open');
             setTimeout(() => {
-                iniciarAnimacionEscritura();
+                iniciarAnimacionTexto();
                 setTimeout(() => {
                     isAnimating = false;
                 }, 2000);
